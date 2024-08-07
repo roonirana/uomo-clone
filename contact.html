@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uomo - eCommerce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .dropdown-content {
+            display: none;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: flex;
+        }
+
+        .dropdown:focus-within .dropdown-content {
+            display: flex;
+        }
+
+        .dropdown:focus-within>button {
+            color: rgb(204, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="block lg:hidden">
+        <div class="flex px-8 py-7 font-sans justify-between">
+            <div class="relative dropdown inline-block">
+                <button class=" text-black focus:outline-none font-medium text-sm">
+                    <i class="fa fa-bars text-lg"></i>
+                </button>
+            </div>
+
+            <div class="flex">
+                <img class="h-6" src="./assets/logo.jpg" alt="LOGO" />
+            </div>
+
+            <div class="relative dropdown inline-block mr-10">
+                <button class=" text-black focus:outline-none font-medium text-sm">
+                    <i class="fa fa-shopping-bag text-lg"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <nav class="hidden lg:block">
+        <div class="flex px-8 py-7 font-sans justify-between">
+            <div class="flex">
+                <img class="h-6 mr-12" src="./assets/logo.jpg" alt="LOGO" />
+                <div class="relative dropdown inline-block mr-10">
+                    <button class=" text-black focus:outline-none font-medium text-sm">
+                        HOME
+                    </button>
+                    <div
+                        class="dropdown-content w-max flex-col absolute bg-white shadow-lg mt-2 rounded z-10 p-6 text-xs">
+                        <a href="./home.html" class="py-2 text-black ">Home 1</a>
+                        <a href="" class="py-2 text-black ">Home 2</a>
+                        <a href="" class="py-2 text-black">Home 3</a>
+                    </div>
+                </div>
+                <div class="relative dropdown inline-block mr-10">
+                    <button class=" text-black focus:outline-none font-medium text-sm">
+                        SHOP
+                    </button>
+                    <div
+                        class="dropdown-content w-max flex-col absolute bg-white shadow-lg mt-2 rounded z-10 p-6 text-xs ">
+                        <a href="./shoplist.html" class="py-2 text-black ">Shop List V1</a>
+
+                    </div>
+                </div>
+                <div class="relative dropdown inline-block mr-10">
+                    <button class=" text-black focus:outline-none font-medium text-sm">
+                        BLOG
+                    </button>
+                    <div
+                        class="dropdown-content w-max flex-col absolute bg-white shadow-lg mt-2 rounded z-10 p-6 text-xs duration-300">
+                        <a href="./blog.html" class="py-2 text-black ">Blog V1</a>
+                        <a href="" class="py-2 text-black ">Blog V2</a>
+                        <a href="" class="py-2 text-black">Blog V3</a>
+                    </div>
+                </div>
+                <div class="relative dropdown inline-block mr-10">
+                    <a href="./about.html" class="text-black focus:outline-none font-medium text-sm">
+                        ABOUT
+                    </a>
+                </div>
+                <div class="relative dropdown inline-block">
+                    <a href="" class=" text-black focus:outline-none font-medium text-sm">
+                        CONTACT
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="relative dropdown inline-block mr-10">
+                    <button class=" text-black focus:outline-none font-medium text-sm">
+                        <i class="fa fa-search text-lg"></i>
+                    </button>
+                    <div
+                        class="dropdown-content w-max flex-col absolute bg-white shadow-lg mt-2 rounded z-10 p-6 text-xs duration-300">
+                        <a href="" class="py-2 text-black ">Blog V1</a>
+                        <a href="" class="py-2 text-black ">Blog V2</a>
+                        <a href="" class="py-2 text-black">Blog V3</a>
+                    </div>
+                </div>
+                <div class="relative dropdown inline-block mr-10">
+                    <button class=" text-black focus:outline-none font-medium text-sm">
+                        <i class="fa fa-user-o font-extrabold text-lg"></i>
+                    </button>
+                    <div
+                        class="dropdown-content w-max flex-col absolute bg-white shadow-lg mt-2 rounded z-10 p-6 text-xs duration-300">
+                        <a href="" class="py-2 text-black ">Blog V1</a>
+                        <a href="" class="py-2 text-black ">Blog V2</a>
+                        <a href="" class="py-2 text-black">Blog V3</a>
+                    </div>
+                </div>
+                <div class="relative dropdown inline-block mr-10">
+                    <button class=" text-black focus:outline-none font-medium text-sm">
+                        <i class="fa fa-heart-o font-extrabold text-lg"></i>
+                    </button>
+                    <div
+                        class="dropdown-content w-max flex-col absolute bg-white shadow-lg mt-2 rounded z-10 p-6 text-xs duration-300">
+                        <a href="" class="py-2 text-black ">Blog V1</a>
+                        <a href="" class="py-2 text-black ">Blog V2</a>
+                        <a href="" class="py-2 text-black">Blog V3</a>
+                    </div>
+                </div>
+                <div class="relative dropdown inline-block mr-10">
+                    <button class=" text-black focus:outline-none font-medium text-sm">
+                        <i class="fa fa-shopping-bag text-lg"></i>
+                    </button>
+                    <div
+                        class="dropdown-content w-max flex-col absolute bg-white shadow-lg mt-2 rounded z-10 p-6 text-xs duration-300">
+                        <a href="" class="py-2 text-black ">Blog V1</a>
+                        <a href="" class="py-2 text-black ">Blog V2</a>
+                        <a href="" class="py-2 text-black">Blog V3</a>
+                    </div>
+                </div>
+                <div class="relative dropdown inline-block">
+                    <button class=" text-black focus:outline-none font-medium text-sm">
+                        <i class="fa fa-bars text-lg"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="mt-10 mx-[10%]">
+        <b class="font-extrabold text-4xl text-gray-900 ">CONTACT US</b>
+    </div>
+    <div class="w-full mt-10">
+        <img src="https://anvil.works/docs/ui/components/img/maps/map-with-marker.png" alt="Static Map"
+            class="w-full h-full object-cover">
+    </div>
+    <div class="mt-10 flex mx-[10%] gap-10">
+        <section class="w-full">
+            <h5 class="text-gray-900 text-xl font-medium">Store in London</h5>
+            <p class="mt-4">1418 River Drive, Suite 35 Cottonhall, CA 9622 <br>
+                United States</p>
+            <p class="mt-4">sale@uomo.com<br>
+                +1 246-345-0695 </p>
+        </section>
+        <section class="w-full">
+            <h5 class="text-gray-900 text-xl font-medium">Store in Istanbul</h5>
+            <p class="mt-4">1418 River Drive, Suite 35 Cottonhall, CA 9622 <br>
+                United States</p>
+            <p class="mt-4">sale@uomo.com <br>
+                +1 246-345-0695</p>
+        </section>
+    </div>
+    <div class="mx-[10%] mt-10">
+        <h1 class="text-gray-900 font-medium text-2xl">Get In Touch</h1>
+        <input type="text" placeholder="Name *" class="mt-10 p-3 border-gray-200 border-[2px] w-full outline-none" required>
+        <input type="email" placeholder="Email address *" class="mt-5 p-3 border-gray-200 border-[2px] w-full outline-none " required>
+        <textarea placeholder="Your Message" class="mt-5 h-80 p-3 border-gray-200 border-[2px] w-full outline-none resize-none" required></textarea>
+        <input type="submit" class="bg-gray-800 mt-5 text-white py-5 px-20 uppercase">
+    </div>
+    <div class="px-[10%] py-16 bg-slate-200 mt-40">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center mb-8 md:mb-0">
+                <div class="">
+                    <img src="./assets/logo.jpg" alt="logo" class="mb-14">
+                    <p class="text-gray-600">1418 River Drive, Suite 35 Cottonhall, CA 9622 United States</p>
+                    <a href="mailto:sale@uomo.com" class="text-gray-600 hover:text-gray-800">sale@uomo.com</a>
+                    <p class="text-gray-600">+1 246-345-0695</p>
+                    <div class="flex flex-row items-center mt-7">
+                        <div class="flex h-5 w-5 mr-3 cursor-pointer brightness-0">
+                            <img src="./assets/facebook-logo-png-23.png" alt="Facebook">
+                        </div>
+                        <div class="flex h-5 w-5 mr-3 cursor-pointer brightness-0">
+                            <img src="./assets/twitter-icon-83.png" alt="Twitter">
+                        </div>
+                        <div class="flex h-4 w-4 mr-3 cursor-pointer brightness-0">
+                            <img src="./assets/62-instagram-512.png" alt="Instagram">
+                        </div>
+                        <div class="flex h-5 w-5 mr-3 cursor-pointer brightness-0">
+                            <img src="./assets/pinterest-logo-icon-3178.png" alt="Pinterest">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row md:flex-row justify-around md:justify-between items-center w-full md:w-auto">
+                <div class="mr-5">
+                    <h3 class="text-gray-800 font-bold mb-4">COMPANY</h3>
+                    <ul class="space-y-2">
+                        <li><a href="" class="text-gray-600 hover:text-gray-800">About Us</a></li>
+                        <li><a href="" class="text-gray-600 hover:text-gray-800">Careers</a></li>
+                        <li><a href="" class="text-gray-600 hover:text-gray-800">Affiliates</a></li>
+                        <li><a href="" class="text-gray-600 hover:text-gray-800">Blog</a></li>
+                        <li><a href="" class="text-gray-600 hover:text-gray-800">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="mr-5">
+                    <h3 class="text-gray-800 font-bold mb-4">SHOP</h3>
+                    <ul class="space-y-2">
+                        <li><a href="" class="text-gray-600 hover:text-gray-800">New Arrivals</a></li>
+                        <li><a href="" class="text-gray-600 hover:text-gray-800">Accessories</a></li>
+                        <li><a href="" class="text-gray-600 hover:text-gray-800">Men</a></li>
+                        <li><a href="" class="text-gray-600 hover:text-gray-800">Women</a></li>
+                    </ul>
+                </div>
+
+                <div class="mr-5 w-max">
+                    <h3 class="text-gray-800 font-bold mb-4">HELP</h3>
+                    <ul class="space-y-2">
+                        <li><a href="" class="text-gray-600 hover:text-gray-800">Customer Service</a></li>
+                        <li><a href="" class="text-gray-600 hover:text-gray-800">My Account</a></li>
+                        <li><a href="" class="text-gray-600 hover:text-gray-800">Find a Store</a></li>
+                        <li><a href="" class="text-gray-600 hover:text-gray-800">Legal & Privacy</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <div class="mt-10 md:m-0">
+                <h3 class="text-gray-800 font-bold text-lg mb-4">SUBSCRIBE</h3>
+                <p class="text-gray-600">Be the first to get the latest news about trends, promotions, and much more!
+                </p>
+                <div class="flex bg-white mt-4">
+                    <input type="email" placeholder="Your email address" class="w-full px-3 py-2 border-none ">
+                    <button class="bg-white text-black border-none pr-2">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
